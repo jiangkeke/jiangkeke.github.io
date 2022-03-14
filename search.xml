@@ -1,6 +1,326 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>C++教案</title>
+    <url>/2022/03/14/C++%E6%95%99%E6%A1%88/</url>
+    <content><![CDATA[<h2 id="前言-学习编程的三个阶段"><a href="#前言-学习编程的三个阶段" class="headerlink" title="前言 学习编程的三个阶段"></a>前言 学习编程的三个阶段</h2><p>学习编程，有三个阶段，分别是：“语法学习”、“基础编程能力”打造和“算法及数据结构”学习。</p>
+<h5 id="一、语法学习"><a href="#一、语法学习" class="headerlink" title="一、语法学习"></a>一、语法学习</h5><p>第一阶段是“语法学习”阶段，学习编程语言的基础语法。不同的编程语言，比如C语言、C++、Python、Java等等，有不同的语法。这个阶段，就是学会特定编程语言的语法。以C语言举例，学习内容会包括：</p>
+<ol>
+<li>输入输出：printf、scanf、puts等</li>
+<li>运算和数据类型：整型、浮点型、运算符</li>
+<li>分支结构程序：if语句 、else语句、嵌套的if、switch和break</li>
+<li>程序的循环控制：do语句、while语句、for语句、多重循环</li>
+<li>数组：声明、初始化、遍历、多维数组</li>
+<li>函数：定义、调用、值传递、作用域</li>
+<li>字符串处理：字符数组、字符串的读取、格式化显示、大小写转化、字符串处理库函数</li>
+<li>指针：取址运算符、指针运算符、指针和数组、指针和字符串</li>
+<li>结构体：结构体成员、.运算符、—＞运算符</li>
+<li>文件处理：文件与流、打开文件、关闭文件等</li>
+<li>…<span id="more"></span></li>
+</ol>
+<p>其他编程语言类似，都有特定的语法要学。在学习语法的阶段，会编一些简单的程序，通过编程来帮助学习语法。</p>
+<h5 id="二、基础编程能力"><a href="#二、基础编程能力" class="headerlink" title="二、基础编程能力"></a>二、基础编程能力</h5><p>经过第一阶段的学习，学会语法了，并不代表就会“编程”了。<br>举个例子：就象学会了26个英文字母，学会了一般现在时、现在进行时等语法，但没有背过单词，没有练过几个造句，没写过作文，你奢望他能写出让人拍手叫绝的文学作品来，这是不现实的。</p>
+<p>*<em><strong>“基础编程能力”阶段</strong>，是指通过编写一定数量的程序，具备通过编程解决简单问题的能力。</em>*</p>
+<p>这个阶段编写的程序具备几个特征：</p>
+<h6 id="1-简单的数学问题或应用问题"><a href="#1-简单的数学问题或应用问题" class="headerlink" title="1.简单的数学问题或应用问题"></a>1.简单的数学问题或应用问题</h6><h6 id="2-不用到任何算法和数据结构"><a href="#2-不用到任何算法和数据结构" class="headerlink" title="2.不用到任何算法和数据结构"></a>2.不用到任何算法和数据结构</h6><h6 id="3-一般都是经典的数学或逻辑问题。"><a href="#3-一般都是经典的数学或逻辑问题。" class="headerlink" title="3.一般都是经典的数学或逻辑问题。"></a>3.一般都是经典的数学或逻辑问题。</h6><p>无论学习哪种编程语言，都要经过这个阶段才能具备最初级的编程能力。</p>
+<p>这个阶段的程序都是经典的简单问题，所谓经典，就是无论学习的是哪种编程语言，都会用这类题目作为讲解的例题或课后的作业。这个阶段的程序可能包括：</p>
+<p>1.简单的数学问题：输出九九乘法表、求10000以内的质数、判断两个数是否互质、水仙花数、求数根、输出菲波纳切数列的前n项、求n个数的最大和最小数、分解质因数、进制转换、角谷猜想、矩阵乘法等。<br>2.输出各种图形，比如：等腰三角形、直角三角形、菱形、圣诞树型等。<br>3.简单的应用问题：闰年的判断、计算两个日期之间的天数、根据阶梯价格区间计算费用、合影排序、统计单词、字符拼接、字符串替换、大小写字母转换、判断回文等、简单的排序等。<br>这一阶段的简单题目做到100道，就基本具备最基础的编程能力了。</p>
+<p>因为这个阶段，不学习算法和数据结构，所以并不具备编写稍微复杂一些的程序的能力。现在，一般是到大学阶段，才会学习编程。理科的课程会学习编程语言，如果大学阶段，只是学习一、两门编程语言，不学习“算法和数据结构”，没有额外的其他编程练习，那么这个大学生的编程能力基本就只到这个阶段。因为一门编程语言课程，主要学习语法，一个学期的课程，编程作业一般不超过60道，所以编程能力也就达到这个水平。市场上的编程培训机构（这里定义的编程不包括图形化编程），如果仅是编程语言学习，比如学python，而不是以信息学竞赛为目标，那么一般最多学习到这个阶段。</p>
+<h5 id="三、算法和数据结构"><a href="#三、算法和数据结构" class="headerlink" title="三、算法和数据结构"></a>三、算法和数据结构</h5><p><strong>第三个阶段是“算法和数据结构”阶段，这个阶段会学习算法和数据结构，就是通过算法和数据结构建模，解决复杂的计算问题。</strong></p>
+<p>以参加中国或美国信息学竞赛为目标的学习者，都会进入这个阶段。这个阶段学习的算法，可参考以下文章：</p>
+<blockquote>
+<p>《NOIP“信息学”竞赛都考些啥子算法？—青少编程（21）》<br>算法(algorithm)，“就是任何良定义的计算过程”（摘自《算法导论》，Thomas H. Cormen, Charles E. Leiserson）。算法是计算机专业的核心课程。中国和美国顶级的中学生编程竞赛，国内的信息学NOIP和美国的USACO，就是算法竞赛，两个竞赛的基本形式都是在指定的时间内，选手利用各种算法编程解决问题。这个阶段，除了要掌握算法和数据结构的理论外，要大量做题来提升应用水平。<br>这个阶段的题目有如下特征：<br>1.有时间复杂度和空间复杂度要求，程序要在指定的时间和内存空间运行限制下运算出结果。<br>2.不用特定的算法和数据结构，做不出来。</p>
+</blockquote>
+<blockquote>
+<p>编程学习的第三阶段“算法阶段”与第二阶段“基础编程能力阶段”的区别在于，如果说得极端一些，第三阶段的学生拿出第三阶段的任意一道编程题目给第二阶段的学生做，第二阶段的学生都做不出来。</p>
+</blockquote>
+<blockquote>
+<p>这个阶段要学习多少算法、要演练多少题目，跟学习者的目标相关。每个算法都有不同难度级别的题目。以国内一个知名题库网站的难度分类为例，它的题目分为：入门、普及-、普及+、提高、提高+、省选、NOI一个七个级别。“普及”的难度对于原来信息学竞赛普及组（初中生参赛）的难度，“提高”的难度对应原来信息学竞赛提高组（高中生参赛）的难度，“省选”是省队（中学生）选拔的难度，“NOI”是国家队（中学生）选拔的难度。</p>
+</blockquote>
+<blockquote>
+<p>对于任意一个算法，都有不同难度的题目，目标是达到哪个阶段，就要做到哪个难度级别的题目。</p>
+</blockquote>
+<blockquote>
+<p>顺便说一句，这个网站大多数“入门”级别的题目，难度都高于“基础编程能力”阶段的题目。</p>
+</blockquote>
+<blockquote>
+<p>是否要学到第三个阶段，这和孩子的兴趣和目标相关。如果是理科娃，喜欢编程，能力具备，在第三个阶段会“甘之如饴”。我有一个学员，每次上完课，留完编程作业，他总是觉得不够，老要求我多留一些，这是真喜欢编程。</p>
+</blockquote>
+<blockquote>
+<p>如果孩子的逻辑思维和抽象思维不强，或者志不在此，那么碰到难题就会有很强的挫败感，就没有必要进入这个阶段。</p>
+</blockquote>
+<blockquote>
+<p>另外，本文讨论的“编程”，都是指“写代码”编程。现在，一些面向低龄儿童的编程机构，提出了一个“图形化编程”的概念，就是不写代码，通过拖拽功能块实现一些任务。“图形化编程”不在本文讨论的范围，它连本文提到的第一个“语法学习”阶段也未达到。</p>
+</blockquote>
+<hr>
+<h2 id="C-第一课-介绍C"><a href="#C-第一课-介绍C" class="headerlink" title="C++第一课 介绍C++"></a>C++第一课 介绍C++</h2><h5 id="一、从C到C"><a href="#一、从C到C" class="headerlink" title="一、从C到C++"></a>一、从C到C++</h5><p>计算机诞生初期，用机器语言或汇编语言编写程序；第一种高级语言FORTRAN诞生于1954年；BASIC语言(1964)是由FORTRAN语言的简化而成的是为初学者设计的小型高级语言；C语言是1972年由美国贝尔实验室的 D.M.Ritchie 研制成功的。它是为计算机专业人员设计的；大多数系统软件和许多应用软件都是用C语言编写的。随着软件规模的增大，用C语言编写程序渐渐吃力了，于是便创造出了C++语言。</p>
+<h5 id="二、C-的特点"><a href="#二、C-的特点" class="headerlink" title="二、C++的特点"></a>二、C++的特点</h5><p>C++是由 AT&amp;T Bell实验室 于20世纪80年代初在C语言的基础上成功开发出来的。C++保留了C语言原有的所有优点，并增加了面向对象的机制。C++是由C语言发展而来的，与C兼容。用C语言写的程序基本上可以不加修改地用于C++。从C++的名字可以看出它是C的超集。C++既可用于面向过程的程序设计，又可用于面向对象的程序设计，是一种功能强大的混合型程序设计语言。备注：C++不是纯面向对象语言。</p>
+<h5 id="三、C-是对C语言的“增强”"><a href="#三、C-是对C语言的“增强”" class="headerlink" title="三、C++是对C语言的“增强”"></a>三、C++是对C语言的“增强”</h5><p>(1) 在原来面向过程机制的基础上，对C语言的功能做了很多扩充。<br>(2) 增加了面向对象的机制。<br>面向对象程序设计，是针对开发较大规模的程序而提出来的，目的是提高软件开发的效率。不要把面向对象和面向过程对立起来，面向对象和面向过程不是矛盾的，而是各有用途互为补充的。</p>
+<p> 所以，通俗来讲，大家在学习的过程中不要把C语言和C++做为两门独立或者对立的语言来学习，本身他们就可以看成是一门语言，任何一款支持C++的编译工具都支持C语言。C++就是C语言的超集，包括了所有C语言的特性，所以你把C++学会了，C语言自然也就会了。如果你之前学过C语言，那么再学习下C++的面向对象思想，那么两者你也就都会了。</p>
+<h5 id="四、用途：C语言和C-都能做什么呢？"><a href="#四、用途：C语言和C-都能做什么呢？" class="headerlink" title="四、用途：C语言和C++都能做什么呢？"></a>四、用途：C语言和C++都能做什么呢？</h5><blockquote>
+<p>C语言：操作系统底层、系统驱动、单片机、嵌入式方面 等等；<br>C++：网络游戏开发、音视频技术、Socket网络通信，另外，苹果&#x2F;谷歌&#x2F;微软 等大型软硬件公司的系统或者软件上面都支持C&#x2F;C++语言的集成开发。<br>你常用的软件大多数都是C++写的，例如：Office软件：MS Office，WPS Office，OpenOffice&#x2F;LibreOffice，你所用的Windows也用了大量的C++，你说你在用C#和SQL，那我告诉你你用的 VS IDE 核心部分是C++写的，你用的C#，C# 的.Net执行框架也是C++写的，你用的Sql数据库，是Sql Server吧？很不幸，Sql Server也是cpp写的、你上网页在用浏览器吗？很不幸，浏览器内核都是C++写的，界面大多数浏览器界面也是C++写的，你聊天用的 QQ、YY、Skype 等也是C++写的。这些都是你绝对有在用的，至于其他，还有很多，杀毒软件、PhotoShop、Maya，N多行业软件，几乎所有的端游 等等，都是C++写的。你问我C++能做什么实际的东西，我告诉你什么也做不了，你信吗？哈哈<br>C++ 的几个常见的发展方向：客户端，游戏，服务端，嵌入式，移动端（移动只要是跨平台的移动端用C++写通用部分，GUI可以用平台特性，也可以用C++的跨平台框架）<br>针对界面UI方面C++的选择也是很多的，其实C++还是擅长“内功”的方面。如果你想带个GUI界面的话，也有很多类似Qt之类的框架和界面库可以使用，网上有很多，而且很多都跨平台，还开源，不管是 Windows，还是Mac，还是Linux，还是移动端平台，通吃的。本身C&#x2F;C++就是跨平台的。<br>另外，说点大家感兴趣的，什么远程控制软件，什么木马，什么外挂等等，可以说95%以上都是用C&#x2F;C++来写的。难道这么多的用途还不值得大家来好好学学C&#x2F;C++吗？另外，闻道有先后、术业有专攻，C++虽然功能很强大，几乎什么都能做，但有的地方也是不适合，不是不能做而是不适合。比如网页开发，C++也能做，但是还是建议使用Java-Web或者PHP之类的语言来做，毕竟他们就是为了Web开发而生的。</p>
+</blockquote>
+<h5 id="五、C-x2F-C-同其他语言的区别："><a href="#五、C-x2F-C-同其他语言的区别：" class="headerlink" title="五、C&#x2F;C++ 同其他语言的区别："></a>五、C&#x2F;C++ 同其他语言的区别：</h5><h6 id="1、编译型语言定义："><a href="#1、编译型语言定义：" class="headerlink" title="1、编译型语言定义："></a>1、编译型语言定义：</h6><p>需通过编译器（compiler）将源代码编译成机器码，之后才能执行的语言。一般需经过编译（compile）、链接（linker）这两个步骤。编译是把源代码编译成机器码，链接是把各个模块的机器码和依赖库串连起来生成可执行文件。优点：编译器一般会有预编译的过程对代码进行优化。因为编译只做一次，运行时不需要编译，所以编译型语言的程序执行效率高。可以脱离语言环境独立运行。缺点：编译之后如果需要修改就需要整个模块重新编译。编译的时候根据对应的运行环境生成机器码，不同的操作系统之间移植就会有问题，需要根据运行的操作系统环境编译不同的可执行文件。代表语言：C、C++、Pascal、Object-C 以及最近很火的苹果新语言Swift</p>
+<h6 id="2、解释型语言定义："><a href="#2、解释型语言定义：" class="headerlink" title="2、解释型语言定义："></a>2、解释型语言定义：</h6><p>指用专门解释器对源程序逐行解释成特定平台的机器码并立即执行的语言，相当于把编译型语言的编译链接过程混到一起同时完成的。解释型语言执行效率较低，且不能脱离解释器运行，但它的跨平台型比较容易，只需提供特定解释器即可。代表语言：Python（同时是脚本语言）与 Ruby、PHP 等。</p>
+<h6 id="3、脚本语言定义："><a href="#3、脚本语言定义：" class="headerlink" title="3、脚本语言定义："></a>3、脚本语言定义：</h6><p>为了缩短传统的编写-编译-链接-运行（edit-compile-link-run）过程而创建的计算机编程语言。它的特点是：程序代码即是最终的执行文件，只是这个过程需要解释器的参与，所以说脚本语言与解释型语言有很大的联系。脚本语言通常是被解释执行的，而且程序是文本文件。代表语言：JavaScript，Python、Perl 等。四、混合型语言既然编译型和解释型各有缺点就会有人想到把两种类型整合起来，取其精华去其糟粕。就出现了半编译型语言。比如 C#，C#在编译的时候不是直接编译成机器码而是中间码，.NET平台提供了中间语言运行库运行中间码，中间语言运行库类似于Java虚拟机。.Net在编译成IL代码后，保存在DLL中，首次运行时由JIT在编译成机器码缓存在内存中，下次直接执行。严格来说混合型语言属于解释型语言。C#更接近编译型语言。代表语言：C#、Java</p>
+<h5 id="六、第一个C-程序"><a href="#六、第一个C-程序" class="headerlink" title="六、第一个C++程序"></a>六、第一个C++程序</h5><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* Hello,World!*/</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span>     <span class="comment">//头文件</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;    <span class="comment">//名字空间</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span>                   <span class="comment">//主函数</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">       cout &lt;&lt; <span class="string">&quot;Hello World!&quot;</span> &lt;&lt; endl;</span><br><span class="line">       <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>知识点：<br>1、了解程序格式，认识 cout 输出，endl换行<br>2、了解注释的两种写法<br>    &#x2F;*   *&#x2F; 多行注释<br>    &#x2F;&#x2F; 单行注释<br>3、c++万能头文件：<br>    #include&lt;bits&#x2F;stdc++.h&gt;</p>
+<h5 id="七、练习"><a href="#七、练习" class="headerlink" title="七、练习"></a>七、练习</h5><p>1.1、编写程序，输出唐诗《春晓》<br>春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。</p>
+<hr>
+<h2 id="C-第二课-C-的数据类型与常量"><a href="#C-第二课-C-的数据类型与常量" class="headerlink" title="C++第二课 C++的数据类型与常量"></a>C++第二课 C++的数据类型与常量</h2><h5 id="一、C-的各种数据类型："><a href="#一、C-的各种数据类型：" class="headerlink" title="一、C++的各种数据类型："></a>一、C++的各种数据类型：</h5><img src="https://jiangkeke.oss-cn-hangzhou.aliyuncs.com/git/C%2B%2B%E6%A0%A1%E6%9C%AC%E6%95%99%E6%9D%90/%E7%AC%AC2%E7%AB%A0/1.gif" style="zoom:100%;" />
+
+<p><strong>整型呢，一般用来表示整数，没有小数点的，浮点型一般用来表示有多位小数点的数，字符型呢，一般表示一个一个的字符，比如字母 a，b，c 之类的。</strong><br>有的网友会问，简单来说，整型和浮点型能不能统一都用浮点型，比如：5.0 就表示整数5，也是可以的。他们占用的空间不一样，那我问你，你在家用饭盆吃饭么？能不能吃，肯定能吃，但是太大了，不方便啊，你喝水呢，用水桶喝水吗？能不能喝，能喝，但是不方便。所以，还是本着什么东西该用到什么地方就用到什么地方，不能乱用，不然不是这不合适，就是那不合适。<br><strong>类型呢，又可分为 有符号的 和 无符号的，有符号的可以表示负数，无符号的只能表示正数。但是无符号的最大正数会比有符号的最大正数大很多。</strong></p>
+<h5 id="二、各种类型所占用的空间大小："><a href="#二、各种类型所占用的空间大小：" class="headerlink" title="二、各种类型所占用的空间大小："></a>二、各种类型所占用的空间大小：</h5><p><img src="https://jiangkeke.oss-cn-hangzhou.aliyuncs.com/git/C%2B%2B%E6%A0%A1%E6%9C%AC%E6%95%99%E6%9D%90/%E7%AC%AC2%E7%AB%A0/2.jpg"></p>
+<p>举个栗子：比如说中国有13亿人口，用来表示人口数的变量类型你怎么选？用 short 或者 unsigned short 可以吗？其最大表示的正整数才是65535，也就是 6万 多人，跟13亿差太远了。。。如果用 unsigned int 呢，其最大值是 4294967295，也就是 42亿多，用来表示中国 13 亿人口足够了。但是全球的世界人口呢？</p>
+<p>在人口统计学中，世界人口是目前全球的总人数。 世界人口估计在2017年4月24日16时21分（UTC）达到75亿人。 联合国估计，在2100年将进一步增加到112亿。75亿，112亿，那么现有的 unsigned int 类型又表示不下了，unsigned int 类型占用 4个 字节，所以得找能占用 8个字节的整型才行。上面的那个表没有，再给大家看一个表：</p>
+<p><img src="https://jiangkeke.oss-cn-hangzhou.aliyuncs.com/git/C%2B%2B%E6%A0%A1%E6%9C%AC%E6%95%99%E6%9D%90/%E7%AC%AC2%E7%AB%A0/3.jpg"></p>
+<p>用什么类型啊？unsigned long long 占用8个字节，这回足够用了，其最大值是：18446744073709551615，这个数确实是太大了。。。184万万亿！这回表示全球人口够用了吧！可如果你用 unsigned long long 来表示一个班级中所有学生的数目，那就有点太浪费了。一个班级中所有学生的数量不会超过几百人吧，用个 unsigned short 足够用了，还节省空间。所以说大家以后做编码开发的时候要根据自己的实际情况来选择。</p>
+<h5 id="三、空间大小的衡量标准："><a href="#三、空间大小的衡量标准：" class="headerlink" title="三、空间大小的衡量标准："></a>三、空间大小的衡量标准：</h5><p>我上面说的类型占用几个字节啊什么的，大家可能没个标准也不太好衡量。下面我给大家介绍一个单位：就目前来说大家可能比较熟悉的单位就是：MB、GB、TB 可能大家比较熟悉了。说今天我买了一块 2TB 的硬盘。昨天我买了一块240G的固态硬盘，我电脑的内存是8G，等等。</p>
+<p>存储单位主要有以下这么多：B，KB，MB，GB，TB，EB，ZB，YB，BB<br>他们之间都是1024倍的关系：<br>1B   &#x3D; 8bit（比特）<br>1KB &#x3D; 1024B（字节）<br>1MB &#x3D; 1024KB<br>1GB &#x3D; 1024MB<br>1TB &#x3D; 1024GB</p>
+<p>有个了这个比较，大家大体上应该知道字节单位的大小了吧！一首MP3音乐文件的大小大概在 3<del>4MB的样子，一个普通的高清电影一般在1</del>2GB的样子。</p>
+<p><strong>使用重点：要兼顾扩展性与占用空间两方面的需求。小了不够用，容易溢出越界，大了呢既占用空间，又不利于网络传输！</strong></p>
+<p>举个例子：<br>有符号的 char 能表示的范围是：-128~+127，你说这个体积小，就占用一个字节，我就用它来表示人的年龄吧，127，但是你不感觉这个数字有点悬吗？真就有某位长寿星，年龄超过127也不是不可能啊，所以一味的为了节省空间，而选择占用小的类型也不是明智之举，容易越界溢出。</p>
+<p>所以用个 short 来表示还是比较不错的，取值范围既够用，占用空间也才 2 个字节。另外，年龄不可能是负数，所以直接用 unsigned short 就可以了。</p>
+<h5 id="四、C-中的常量："><a href="#四、C-中的常量：" class="headerlink" title="四、C++中的常量："></a>四、C++中的常量：</h5><p>常量的分类：<br>①、数值常量：整型、浮点型；整型：5,6 之类的；浮点型：1.3, 2.6 等等，就是带小数点的；<br>②、字符常量：普通字符常量、转义字符常量、字符串常量；普通字符常量：’a’，’d’等转义字符常量：<br>字符串常量：”zhangsan”<br>③、符号常量：<br>为了阅读和修改的方便，常用一个由字母和数字组成的符号再带变某个常量，这样的常量就叫符号常量。<br>#define 常量名 常量值</p>
+<ul>
+<li>定义之后，程序中所有出现“常量名”的地方，就等价于出现“常量值”</li>
+<li>常量名的命名规则和变量相同，常量值则写什么常量都可以<br>尽量少使用数值常量，用符号常量进行替代，这样便于修改。</li>
+</ul>
+<p>宏定义：#define PRICE 305、<br>常量示例代码：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> Apple_Price 5</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;Hello World.&quot;</span> &lt;&lt; endl;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;张三 要去买苹果啦...&quot;</span> &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">        <span class="type">int</span> num = <span class="number">10</span>; <span class="comment">//10斤</span></span><br><span class="line">        <span class="type">int</span> total_money = num * Apple_Price;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;张三要买 &quot;</span> &lt;&lt; num &lt;&lt; <span class="string">&quot; 斤苹果，每斤 &quot;</span> &lt;&lt; Apple_Price &lt;&lt; <span class="string">&quot; 块钱，总共要付：\n&quot;</span> &lt;&lt; total_money &lt;&lt; <span class="string">&quot; 元&quot;</span> &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="五、学习程序："><a href="#五、学习程序：" class="headerlink" title="五、学习程序："></a>五、学习程序：</h5><p>1、计算长方形面积<br>知识点：定义变量，赋值语句</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">       <span class="type">int</span> a, b, s;</span><br><span class="line"></span><br><span class="line">       a = <span class="number">880</span>;</span><br><span class="line"></span><br><span class="line">       b = <span class="number">500</span>;</span><br><span class="line"></span><br><span class="line">       s = a * b;</span><br><span class="line"></span><br><span class="line">       cout &lt;&lt; <span class="string">&quot;长方形面积 = &quot;</span> &lt;&lt; s &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">       <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>2、改写<br>知识点：<strong>学习 cin</strong></p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">       <span class="type">int</span> a, b, s;</span><br><span class="line"></span><br><span class="line">       cin &gt;&gt; a &gt;&gt; b ;;</span><br><span class="line">       </span><br><span class="line">       s = a * b;</span><br><span class="line"></span><br><span class="line">       cout &lt;&lt; <span class="string">&quot;长方形面积 = &quot;</span> &lt;&lt; s &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">       <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="C-第三课-C-中的变量"><a href="#C-第三课-C-中的变量" class="headerlink" title="C++第三课 C++中的变量"></a>C++第三课 C++中的变量</h2><h5 id="一、什么是变量？"><a href="#一、什么是变量？" class="headerlink" title="一、什么是变量？"></a>一、什么是变量？</h5><p>变量，顾名思义，就是在程序的运行过程中值是可以改变的。</p>
+<p>在 c++语言中，数据存入变量前，首先要定义变量。</p>
+<p><strong>变量的定义：</strong> int a<br>定义格式：数据类型 变量名表列;例如：int num;char ch;float a, b, c;<br>必须先定义，后使用，不然肯定报错，编译都过不去。<br>大家可以看看咱们前几节课给大家写的那些简单的代码，里面就有变量的定义。变量定义完了之后，系统就开始为该变量分配内存空间，具体分配多少由变量的类型决定，<br>例如：int 是 4个字节，char 是1个字节 等等。</p>
+<p>变量定义的作用是，在内存开辟一个类型标识符指定类型的空间，用变量名标识。</p>
+<p>int a 表示在内存中开辟一个变量名叫做a,数据类型为整型的空间。<br>    该整型空间占用4个字节，运存存放在a中的数据为 ：-2147483648~2147483647范围内的整数。</p>
+<p>计算机高级语言中通常用变量名标识数据存放在存储器的位置，同时需要指明给变量名所在位置开辟多大的空间。</p>
+<p>为了能够规范地开辟空间，高级语言把数据进行了分类，称之为数据类型，在使用变量前，需要定义变量的数据类型，系统依据定义的数据类型，给变量开辟对应大小的存储空间来存放数据。</p>
+<p>上一节课给大家讲解了常量的知识点，在实际编程的过程中会涉及到各种各样的变量，毕竟常量是不可改变的。在实际的软件开发过程中，由于要经过很多的计算工作，所以单纯常量是满足不了的，必须使用很多的变量。</p>
+<p>一个变量包括变量的类型、名字和变量的值。</p>
+<h5 id="二、变量名字的命名规则："><a href="#二、变量名字的命名规则：" class="headerlink" title="二、变量名字的命名规则："></a>二、变量名字的命名规则：</h5><p><strong>C++规定变量的名字只能由数字、字母、下划线这么三种字符组成。<br>而且第一个字符不能是数字，</strong>必须是字母或者下划线。****<br>举几个例子：Sum, add, total, helloWorld, user1, _Pass, my_num_1 等等，</p>
+<p><u>但是 3gx 这种是错误的，不能是数字开头。</u><br><u>注意：大小写是区分的，</u>Sum 和 sum 以及 SUM、suM 都认为是不同的变量。</p>
+<p><strong>备注：命名建议：</strong><br>①、最好以变量的用途来命名：例如：求和：sum学生：student苹果：apple另外，大家也可以百度一下 “匈牙利命名法”，在变量前面加一个字母来表示变量的类型：iSum，cSex 等等，i 表示 整型的 int，c 表示字符型的 char 等等。这样程序更易于维护，如果代码量比较大的话时间久了就容易忘了，如果变量的名字起的让人一看就知道是干嘛用的，这不是能节省很多时间么。而且以后来说可能代码不是你一个人看，还有别的人看呢！</p>
+<p>②、最好不要用中文来命名，如果你英文不是很好的话，用拼音也比用中文专业。</p>
+<p>③、命名长度：C++中没有强制规定命名标识符的长度，但各个具体的编译器厂商一般都有限制。有的不能超过32个字符等等。反正也没必要那么长，尽量能标识该变量的用途就可以了。</p>
+<h5 id="三、变量的初始化赋值："><a href="#三、变量的初始化赋值：" class="headerlink" title="三、变量的初始化赋值："></a><strong>三、变量的初始化赋值：</strong></h5><p>变量在定义的时候就可以为其赋初始值，称为变量的初始化：<br>例如：int num &#x3D; 5;char ch &#x3D; ‘a’;float a &#x3D; 1.2, b &#x3D; 2.6, c;<br>其实：int num &#x3D; 5; 和int num;num &#x3D; 5;是一个作用，<br>上面的是1条语句，下面的是2条语句。</p>
+<h5 id="四、何为-常量？"><a href="#四、何为-常量？" class="headerlink" title="四、何为 常量？"></a>四、何为 常量？</h5><p>常量，就是值不能改变，变量，就是值可以改变，<br>那么<em><strong>常变量</strong></em>又是个什么东西呢，常量和变量结合一起的产物是什么呢？<br><strong>总结一句话就是变量在赋初值之后就不能改变了，即要求定义的时候必须赋值。</strong><br>那么如何来区别呢，那就是在变量定义的前面加上 const 关键字，<br>例如：const int sum &#x3D; 100;这样 sum 这个变量在定义的时候就初始化了，<br>不过在以后的代码中，如果你尝试去修改 sum 的值肯定会报错的。<br>大家不妨在VS2013中试试！<br>有细心的网友可能会注意到，<u>常变量</u>的用途跟上节课讲解的<u>符号常量</u>：宏定义：#define PRICE 30 有点类似。<br>这里跟大家说一下，其实宏定义#define 是属于C语言的东西，C++为了兼容C语言，所以保留了下来，不过在C++中更建议使用常变量来定义。就好像C语言中使用 printf 来输出打印字符串，在C++中建议使用 cout 一样。不过C++中都是支持的。<br>#define num100  符号常量（后面无分号）<br>const int num&#x3D;100;   常变量(constant variable)（后面有分号）</p>
+<p>在C++中，少用符号常量，尽可能使用常变量。</p>
+<h5 id="五、学习程序"><a href="#五、学习程序" class="headerlink" title="五、学习程序"></a>五、学习程序</h5><p>cin scanf printf<br>1、编程实现两个变量x、y之间值的互换。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">       <span class="type">float</span> x, y, t;</span><br><span class="line"></span><br><span class="line">       cin &gt;&gt; x &gt;&gt; y;</span><br><span class="line"></span><br><span class="line">       t = x;</span><br><span class="line"></span><br><span class="line">       x = y;</span><br><span class="line"></span><br><span class="line">       y = t;</span><br><span class="line"></span><br><span class="line">       cout &lt;&lt; x &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; y &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">       <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="六、练习"><a href="#六、练习" class="headerlink" title="六、练习"></a>六、练习</h5><p>3.1、将输入的华氏温度转换为摄氏温度。<br>已知：摄氏温度c ,将其转化为华氏温度f ,转换公式为：f&#x3D;c*9&#x2F;5+32</p>
+<hr>
+<h2 id="C-第四课-运算符与分支语句"><a href="#C-第四课-运算符与分支语句" class="headerlink" title="C++第四课 运算符与分支语句"></a>C++第四课 运算符与分支语句</h2><h5 id="一、运算符："><a href="#一、运算符：" class="headerlink" title="一、运算符："></a>一、<strong>运算符：</strong></h5><h6 id="算数运算符"><a href="#算数运算符" class="headerlink" title="算数运算符"></a>算数运算符</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">+ - *  </span><br></pre></td></tr></table></figure>
+<p> &#x2F; % ++ –</p>
+<p>&#x2F;:两个整数相除的结果是整数，去掉小数部分 7&#x2F;2&#x3D;3<br>%：模运算符  8%3 &#x3D;2  求两个整数相除的余数</p>
+<p>自加运算符和自减运算符<br><strong>i++  和 ++i 单独使用时，作用相同<br>在赋值语句中使用时，结果不同；</strong></p>
+<p>++i 和–i 是在使用i前，先把i的值加1和减1；<br>i++ 和i– 是在使用i后，先把i的值加1和减1；</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> i = <span class="number">3</span>,j;</span><br><span class="line">	j = ++i;</span><br><span class="line">	cout&lt;&lt; j &lt;&lt; i &lt;&lt;endl;</span><br><span class="line">	j = i++;</span><br><span class="line">	cout&lt;&lt; j &lt;&lt; i &lt;&lt; endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>运行程序，输出：<br>4 4<br>4 5</p>
+<h6 id="关系运算符："><a href="#关系运算符：" class="headerlink" title="关系运算符："></a><strong>关系运算符：</strong></h6><p>&#x3D;&#x3D;   ，  ！&#x3D;，   &gt; ,&lt; ,&lt;&#x3D;<br>等于，不等于，大于，小于，小于等于</p>
+<p>关系运算符运算的结果是bool类型，值为:true或false<br>false 为0，代表“假”，代表该关系不成立。<br>true 为非0（一般是1），代表“真”，代表该关系成立。</p>
+<p>if(n%2 &#x3D;&#x3D; 1)<br>等价于<br>if(n%2)</p>
+<p>eg：<br>3 &#x3D;&#x3D; 3 ，其值成立，为真 ，true，1<br>3&gt;5 ,其值不成立，为假，false,0</p>
+<h6 id="赋值运算符："><a href="#赋值运算符：" class="headerlink" title="赋值运算符："></a><strong>赋值运算符：</strong></h6><p>&#x3D;</p>
+<h6 id="逻辑运算符："><a href="#逻辑运算符：" class="headerlink" title="逻辑运算符："></a><strong>逻辑运算符：</strong></h6><p>&amp;&amp; 、||、！<br>与 或 非<br>&amp;&amp;、|| 是双目运算符，!是单目运算符</p>
+<p>逻辑表达式是“短路计算”，即在整个表达式的值已经能够断定时，计算就停止。</p>
+<h6 id="条件运算符："><a href="#条件运算符：" class="headerlink" title="条件运算符："></a><strong>条件运算符：</strong></h6><p>条件运算符<br>“ ? : ”是一个三目运算符。用法如下：<br>表达式1？表达式2：表达式3</p>
+<ol>
+<li>计算表达式1的值</li>
+<li>若表达式1的值为真（非0），则只计算表达式2，并将其结果作为整个表达式的值。</li>
+<li>反之，若表达式1的值为假（0），则只计算表达式3，并将其结果作为整个表达式的值。</li>
+</ol>
+<p>eg:<br>int maxn &#x3D; (a &gt; b) ? a : b      &#x2F;&#x2F;赋值，将两个变量的较大值赋予maxn整型变量中</p>
+<p>cout &lt;&lt; ((num % 2 &#x3D;&#x3D; 0) ? “num is even” : “num is odd” &lt;&lt;endl;</p>
+<p>从可读性来说，条件运算符最适合于简单关系和简单表达式的值；<br>x &#x3D; (a &gt; b)? a : b;<br>当代码变得更复杂时，使用if-else语句表达更为清晰。</p>
+<p><strong>运算符的优先级，不用全记住</strong><br>记住：<br>!&gt;算数运算符&gt;关系运算符&gt;&amp;&amp;&gt;||&gt;赋值运算符</p>
+<p>！*&#x2F;%+- &gt;&lt; &amp;&amp; ||  &#x3D;</p>
+<ul>
+<li>乘除和取模的优先级高于加减。</li>
+<li>“&amp;&amp;”的优先级高于“||”</li>
+<li>在不容易搞清计算顺序的地方，使用括号（）来明确计算顺序。</li>
+</ul>
+<h6 id="例题："><a href="#例题：" class="headerlink" title="例题："></a>例题：</h6><p>1、写出判断某一年份是否是“闰年”的表达式。<br>闰年有两种情况：（四年一闰，百年不闰，四百年又闰）</p>
+<ol>
+<li>年份能被400整除</li>
+<li>年份能被4整除但不能被100整除,</li>
+</ol>
+<p>year % 400 &#x3D;&#x3D; 0<br>(year % 4) &#x3D;&#x3D;0 &amp;&amp; (year % 100) !&#x3D; 0</p>
+<p>(year % 400 &#x3D;&#x3D; 0) || ((year % 4) &#x3D;&#x3D;0 &amp;&amp; (year % 100) !&#x3D; 0)</p>
+<p>2、判断正负数。<br>3、判断奇偶数。 n%2 &#x3D;&#x3D; 1<br>4、输入一个整数N，判断它是否同时能被3和5整除</p>
+<hr>
+<h5 id="二、程序的控制结构"><a href="#二、程序的控制结构" class="headerlink" title="二、程序的控制结构"></a>二、程序的控制结构</h5><p>概述</p>
+<p>C++有三种程序结构：顺序结构、选择结构（分支结构）、循环结构。</p>
+<p>选择结构有三种：<br> if选择结构、if-else选择结构和switch选择结构</p>
+<p>循环结构有三种：<br>for、while、do-while</p>
+<ul>
+<li>if选择结构称为单分支选择结构，选择或忽略一个分支的操作</li>
+<li>if-else选择结构称为双分支选择结构，在两个不同分支中选择</li>
+<li>switch 选择结构称为多分支（多项）选择结构，以多种不同的情况选择多个不同的操作。</li>
+</ul>
+<p>C++是区分大小写的语言，while、if和else等只能使用小写字母</p>
+<h6 id="if语句格式："><a href="#if语句格式：" class="headerlink" title="if语句格式："></a><strong>if语句格式：</strong></h6><p>格式1、 if(表达式) 语句；<br>格式2、<br>        if(表达式)<br>        语句1；<br>        else<br>        语句2；         </p>
+<h6 id="例题：-1"><a href="#例题：-1" class="headerlink" title="例题："></a>例题：</h6><p>1、输入一个200以内的整数作为IQ值，判断是不是天才。若大于140，输出：天才</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> iq;</span><br><span class="line">	cout&lt;&lt; <span class="string">&quot;IQ:&quot;</span>;</span><br><span class="line">	cin&gt;&gt;iq;</span><br><span class="line">	<span class="keyword">if</span>(iq &gt; <span class="number">140</span>)	cout &lt;&lt; <span class="string">&quot;天才&quot;</span> &lt;&lt; endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>2、输入一个200以内的整数作为IQ值，判断是不是天才。若大于140，输出：天才，否则输出：正常人</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> iq;</span><br><span class="line">	cout&lt;&lt; <span class="string">&quot;IQ:&quot;</span>;</span><br><span class="line">	cin&gt;&gt;iq;</span><br><span class="line">	<span class="keyword">if</span>(iq &gt; <span class="number">140</span>)</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;天才&quot;</span> &lt;&lt; endl;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;正常人&quot;</span> &lt;&lt;endl;	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="练习："><a href="#练习：" class="headerlink" title="练习："></a>练习：</h6><p>1、当a大于b,则输出a,否则输出b<br>2、当n能被5整除时，输出换行，否则输出n;<br>3、当a大于b时，就把a的值给max,否则就把b的值给max;<br>4、当a能被3整除时，s的值加1，否则t的值加1；<br>5、当n等于1000时，s的值加1，否则s的值减1；<br>6、输入n,判断奇偶</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//当a大于b,则输出a,否则输出b</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> a,b;</span><br><span class="line">	cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">	<span class="keyword">if</span>(a &gt; b)</span><br><span class="line">	cout&lt;&lt;a;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	cout&lt;&lt;b;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//当n能被5整除时，输出换行，否则输出n;</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	cin&gt;&gt;n;</span><br><span class="line">	<span class="keyword">if</span>(n%<span class="number">5</span> == <span class="number">0</span>)</span><br><span class="line">	cout &lt;&lt; endl;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	cout&lt;&lt;n;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//当a大于b时，就把a的值给max,否则就把b的值给max;</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> a,b,max;</span><br><span class="line">	cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">	<span class="keyword">if</span>(a &gt; b)</span><br><span class="line">	max = a;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	max = b;</span><br><span class="line">	cout&lt;&lt;max&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//当a能被3整除时，s的值加1，否则t的值加1；</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> a,s,t;</span><br><span class="line">	cin&gt;&gt;a&gt;&gt;s&gt;&gt;t;</span><br><span class="line">	<span class="keyword">if</span>(a % <span class="number">3</span> == <span class="number">0</span>)</span><br><span class="line">	++s;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	++t;</span><br><span class="line">	cout&lt;&lt; s &lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt; t &lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//判断奇偶</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	cin&gt;&gt;n;</span><br><span class="line">	<span class="keyword">if</span>(n%<span class="number">2</span> == <span class="number">1</span>)    <span class="comment">//等价于 if(n%2)</span></span><br><span class="line">		cout&lt;&lt;<span class="string">&quot;It is odd.&quot;</span>&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		cout&lt;&lt;<span class="string">&quot;It is even.&quot;</span>&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"> &#125; </span><br></pre></td></tr></table></figure>
+
+
+
+<h6 id="switch语句"><a href="#switch语句" class="headerlink" title="switch语句"></a>switch语句</h6><p>格式:</p>
+<p>switch(表达式）<br>{<br>    case 常量表达式1：<br>            语句组1；<br>            break;<br>    …..<br>    case 常量表达式n：<br>            语句组n；<br>            break;<br>    default:<br>            语句组n+1;<br>}</p>
+<h6 id="例题：-2"><a href="#例题：-2" class="headerlink" title="例题："></a>例题：</h6><p>1、编写一个程序，输入一个整数，输入1.则输出：”Monday”;输入2,输出”Thusday”;输入7，输出“Sunday”;输入其他数，则输出“Illeagal”</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//判断星期几</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span> </span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	cin&gt;&gt;n;</span><br><span class="line">	<span class="keyword">switch</span>(n)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">			cout&lt;&lt;<span class="string">&quot;Monday&quot;</span>;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">			cout&lt;&lt;<span class="string">&quot;Thusday&quot;</span>;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">			cout&lt;&lt;<span class="string">&quot;Wednesday&quot;</span>;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line">			cout&lt;&lt;<span class="string">&quot;Thursday&quot;</span>;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">case</span> <span class="number">5</span>:</span><br><span class="line">			cout&lt;&lt;<span class="string">&quot;Friday&quot;</span>;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">case</span> <span class="number">6</span>:</span><br><span class="line">			cout&lt;&lt;<span class="string">&quot;Saturday&quot;</span>;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">case</span> <span class="number">7</span>:</span><br><span class="line">			cout&lt;&lt;<span class="string">&quot;Sunday&quot;</span>;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">default</span>:</span><br><span class="line">			cout&lt;&lt;<span class="string">&quot;Illegal&quot;</span>;		</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注意：</p>
+<ul>
+<li>每个case语句的结尾不要忘了加break，否则将导致多个分支重叠（除非有意使多个分支重叠）。</li>
+<li>不要忘记最后那个default分支。即使程序真的不需要default处理，也应该保留语句    default : break; 这样做并非多此一举，而是为了防止别人误以为你忘了default处理。</li>
+<li>多个case语句可以共用一组程序。<br>eg:<br>case0:<br>case1:cout&lt;&lt;”1”&lt;&lt;endl;<br>break;<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	cin&gt;&gt;n;</span><br><span class="line">	<span class="keyword">switch</span>(n)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">case</span> <span class="number">0</span>:</span><br><span class="line">		<span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">		<span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">			&#123;</span><br><span class="line">				cout&lt;&lt;<span class="string">&quot;Hello&quot;</span>&lt;&lt;endl;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		<span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">			&#123;</span><br><span class="line">				cout&lt;&lt;<span class="string">&quot;World!&quot;</span>&lt;&lt;endl; </span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			 &#125; </span><br><span class="line">		<span class="keyword">default</span>:</span><br><span class="line">			&#123;</span><br><span class="line">				cout&lt;&lt;<span class="string">&quot;c++&quot;</span>&lt;&lt;endl; </span><br><span class="line">			&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>2、输入x和y,输出x年y月有多少天？<br>样例输入：2000 3<br>样例输出：31</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> x,y;</span><br><span class="line">	cin&gt;&gt;x&gt;&gt;y;</span><br><span class="line">	<span class="keyword">switch</span>(y)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">			<span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">			<span class="keyword">case</span> <span class="number">5</span>:</span><br><span class="line">			<span class="keyword">case</span> <span class="number">7</span>:</span><br><span class="line">			<span class="keyword">case</span> <span class="number">8</span>:</span><br><span class="line">			<span class="keyword">case</span> <span class="number">10</span>:</span><br><span class="line">			<span class="keyword">case</span> <span class="number">12</span>:</span><br><span class="line">				&#123;</span><br><span class="line">					y = <span class="number">31</span>;</span><br><span class="line">					cout&lt;&lt;y&lt;&lt;endl;</span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">				&#125;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line">			<span class="keyword">case</span> <span class="number">6</span>:</span><br><span class="line">			<span class="keyword">case</span> <span class="number">9</span>:</span><br><span class="line">			<span class="keyword">case</span> <span class="number">11</span>:</span><br><span class="line">				&#123;</span><br><span class="line">					y = <span class="number">30</span>;</span><br><span class="line">					cout&lt;&lt;y&lt;&lt;endl;</span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">				&#125;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">				&#123;</span><br><span class="line">					<span class="keyword">if</span>((x%<span class="number">400</span>==<span class="number">0</span>)||((x%<span class="number">4</span>==<span class="number">0</span>)&amp;&amp;(x%<span class="number">100</span>!=<span class="number">0</span>))) </span><br><span class="line">					&#123;</span><br><span class="line">						y = <span class="number">29</span>;</span><br><span class="line">					&#125;</span><br><span class="line">					<span class="keyword">else</span></span><br><span class="line">					&#123;</span><br><span class="line">						y = <span class="number">28</span>;</span><br><span class="line">					&#125;</span><br><span class="line">					cout&lt;&lt;y&lt;&lt;endl;</span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">				&#125;</span><br><span class="line">			<span class="keyword">default</span>:</span><br><span class="line">				cout&lt;&lt;<span class="string">&quot;输入错误&quot;</span>&lt;&lt;endl;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>教学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CSS笔记</title>
+    <url>/2022/03/14/CSS%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>选择器{width:200px;height:200px;background:black;}</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">	&lt;title&gt;军人之家&lt;/title&gt;</span><br><span class="line">	&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">		h1&#123;width: 64px;height: 114px;color：white;&#125;</span><br><span class="line">	&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;h1&gt;这是一部大片&lt;/h1&gt;</span><br><span class="line">	&lt;h2&gt;这是一部大片&lt;/h2&gt;</span><br><span class="line">	&lt;h3&gt;这是一部大片&lt;/h3&gt;</span><br><span class="line">	&lt;h4&gt;这是一部大片&lt;/h4&gt;</span><br><span class="line">	&lt;h5&gt;这是一部大片&lt;/h5&gt;</span><br><span class="line">	&lt;div&gt;12131&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<h4 id="02-CSS引入方式"><a href="#02-CSS引入方式" class="headerlink" title="02.CSS引入方式"></a>02.CSS引入方式</h4><p>内嵌式：级别中等</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">	&lt;title&gt;军人之家&lt;/title&gt;</span><br><span class="line">	&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">		div&#123;width: 514px;height: 714px;background: black;&#125;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;h1&gt;这是一部大片&lt;/h1&gt;</span><br><span class="line">	&lt;h2&gt;这是一部大片&lt;/h2&gt;</span><br><span class="line">	&lt;h3&gt;这是一部大片&lt;/h3&gt;</span><br><span class="line">	&lt;h4&gt;这是一部大片&lt;/h4&gt;</span><br><span class="line">	&lt;h5&gt;这是一部大片&lt;/h5&gt;</span><br><span class="line">	&lt;div&gt;12131&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>行间式，级别最高</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div style=&quot;width:200px;&quot;&gt;12131&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>外链式：引入外面的css文件，级别最低</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;link rel=&quot;sytlesheet&quot; type=&quot;text/css&quot; href=&quot;1.css&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="03-CSS的基本选择器"><a href="#03-CSS的基本选择器" class="headerlink" title="03 CSS的基本选择器"></a>03 CSS的基本选择器</h4><p>全选符 </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">*&#123;width:200px;height:200px;background:black;&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;test&lt;/title&gt;</span><br><span class="line">		&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	*&#123;width: 200px;height: 200px;background: red;&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&#125;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div&gt;&lt;/div&gt;</span><br><span class="line">		&lt;div&gt;&lt;/div&gt;</span><br><span class="line">		&lt;p&gt;&lt;/p&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;test&lt;/title&gt;</span><br><span class="line">		&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">			*&#123;background: red;&#125;</span><br><span class="line">div&#123;width: 200px;height: 200px;background: black;&#125;</span><br><span class="line">p&#123;width: 200px;height: 200px;background: green;&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&#125;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div&gt;&lt;/div&gt;</span><br><span class="line">		&lt;div&gt;&lt;/div&gt;</span><br><span class="line">		&lt;p&gt;&lt;/p&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>标签选择器</p>
+<p>类选择器     权重更高</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype hmtl&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;12345&lt;/title&gt;</span><br><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	.Nathan&#123;width: 200px;height: 500px;background: pink;&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div class=&quot;Nathan&quot;&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>id选择器</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype hmtl&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;12345&lt;/title&gt;</span><br><span class="line">	&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">#Nathan&#123;width: 500px;height: 500px;background: red;&#125;</span><br><span class="line">	&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div id=&quot;Nathan&quot;&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>级别高低：id class * </p>
+<p><img src="https://jiangkeke.oss-cn-hangzhou.aliyuncs.com/202201090642992.png"></p>
+<p><img src="https://pic-1308370142.cos.ap-nanjing.myqcloud.com/img/202201090650658.png"></p>
+<h4 id="04-盒子模型概念"><a href="#04-盒子模型概念" class="headerlink" title="04.盒子模型概念"></a>04.盒子模型概念</h4><p>盒子模型：一个元素在页面中所占的大小</p>
+]]></content>
+      <categories>
+        <category>前端笔记</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML笔记</title>
+    <url>/2022/03/14/Html%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h4 id="02-初识HTML"><a href="#02-初识HTML" class="headerlink" title="02.初识HTML"></a>02.初识HTML</h4><p>html 标签的概念<br>&lt;&gt; &lt;&#x2F;&gt;</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;今天天气不错&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		12234</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="03-DIV标签"><a href="#03-DIV标签" class="headerlink" title="03.DIV标签"></a>03.DIV标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>独占一行</p>
+<blockquote>
+<div> 标签定义 HTML 文档中的一个分隔区块或者一个区域部分。
+
+<div>标签常用于组合块级元素，以便通过 CSS 来对这些元素进行格式化。
+</blockquote>
+<span id="more"></span>
+<h4 id="04-初识img标签"><a href="#04-初识img标签" class="headerlink" title="04.初识img标签"></a>04.初识img标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+<p>上层路径：..&#x2F;</p>
+<p>同层：.&#x2F;</p>
+<p>eg:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;12345&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div&gt;abc&lt;/div&gt;</span><br><span class="line">		&lt;div&gt;21312312313123&lt;/div&gt;</span><br><span class="line">		&lt;div&gt;</span><br><span class="line">			&lt;img src=&quot;4.jpg&quot;&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;img src=&quot;./1.ico&quot;&gt;</span><br><span class="line">		&lt;img src=&quot;jkk/3.jpg&quot;&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="05-a标签（锚点-超链接，新窗口打开或者跳转）"><a href="#05-a标签（锚点-超链接，新窗口打开或者跳转）" class="headerlink" title="05. a标签（锚点,超链接，新窗口打开或者跳转）"></a>05. a标签（锚点,超链接，新窗口打开或者跳转）</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;a href=&quot;https://www.baidu.com/&quot;&gt;百度&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;12345&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div&gt;abc&lt;/div&gt;</span><br><span class="line">		&lt;div&gt;21312312313123&lt;/div&gt;</span><br><span class="line">		&lt;a href=&quot;https://www.baidu.com/&quot;&gt;百度&lt;/a&gt;</span><br><span class="line">		&lt;div&gt;</span><br><span class="line">			&lt;img src=&quot;4.jpg&quot;&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;img src=&quot;./1.ico&quot;&gt;</span><br><span class="line">		&lt;img src=&quot;jkk/3.jpg&quot;&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;a href=&quot;https://www.taobao.com/&quot; target=&quot;_blank&quot;&gt;</span><br><span class="line">			新窗口打开</span><br><span class="line">&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="06-ol标签-有序列表"><a href="#06-ol标签-有序列表" class="headerlink" title="06.ol标签(有序列表)"></a>06.ol标签(有序列表)</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;12345&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;ol&gt;</span><br><span class="line">			&lt;li&gt;leo&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;busy&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;sky&lt;/li&gt;</span><br><span class="line">		&lt;/ol&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>li:list item  列表项</p>
+<p>ol:ordered lists 有序列表</p>
+<h4 id="07-ul（无序列表）"><a href="#07-ul（无序列表）" class="headerlink" title="07.ul（无序列表）"></a>07.ul（无序列表）</h4><p>ul:unordered lists</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;12345&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;ul&gt;</span><br><span class="line">			&lt;li&gt;leo&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;busy&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;sky&lt;/li&gt;</span><br><span class="line">		&lt;/ul&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="08-dl-自定义列表"><a href="#08-dl-自定义列表" class="headerlink" title="08.dl(自定义列表)"></a>08.dl(自定义列表)</h4><p>dl:definition lists    自定义列表</p>
+<p>dt:definition terms    自定义项</p>
+<p>dd:definition description  自定义说明</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;12345&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;dl&gt;</span><br><span class="line">			&lt;dt&gt;&lt;img src=&quot;./2.jpg&quot;&gt;&lt;/dt&gt;</span><br><span class="line">			&lt;dd&gt;李洛克&lt;/dd&gt;</span><br><span class="line">		&lt;/dl&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="09-注释"><a href="#09-注释" class="headerlink" title="09.注释"></a>09.注释</h4><!--                   -->
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;12345&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;!--这是一段注释。注释不会在浏览器中显示。--&gt;</span><br><span class="line">		&lt;dl&gt;</span><br><span class="line">			&lt;dt&gt;&lt;img src=&quot;./2.jpg&quot;&gt;&lt;/dt&gt;</span><br><span class="line">			&lt;dd&gt;李洛克&lt;/dd&gt;</span><br><span class="line">		&lt;/dl&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="10-input"><a href="#10-input" class="headerlink" title="10.input"></a>10.input</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;12345&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;!--这是一段注释。注释不会在浏览器中显示。--&gt;</span><br><span class="line">		&lt;input type=&quot;text&quot;&gt;</span><br><span class="line">		&lt;input type=&quot;button&quot; value=&quot;百度一下&quot;&gt;</span><br><span class="line">		&lt;dl&gt;</span><br><span class="line">			&lt;dt&gt;&lt;img src=&quot;./2.jpg&quot;&gt;&lt;/dt&gt;</span><br><span class="line">			&lt;dd&gt;李洛克&lt;/dd&gt;</span><br><span class="line">		&lt;/dl&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="11-input密码"><a href="#11-input密码" class="headerlink" title="11.input密码"></a>11.input密码</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;12345&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		用户名：&lt;input type=&quot;text&quot;&gt;&lt;br&gt;</span><br><span class="line">		密码：&lt;input type=&quot;password&quot;&gt;&lt;br&gt;</span><br><span class="line">		&lt;input type=&quot;button&quot; value=&quot;提交&quot;&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>br:换行</p>
+<h4 id="12-button标签"><a href="#12-button标签" class="headerlink" title="12.button标签"></a>12.button标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;button&gt;&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="13-P标签"><a href="#13-P标签" class="headerlink" title="13.P标签"></a>13.P标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">	&lt;html&gt;</span><br><span class="line">		&lt;head&gt;</span><br><span class="line">			&lt;meta charsset=&quot;utf-8&quot;&gt;</span><br><span class="line">			&lt;title&gt;12345&lt;/title&gt;</span><br><span class="line">		&lt;/head&gt;</span><br><span class="line">		&lt;body&gt;</span><br><span class="line">			&lt;div&gt;心情好&lt;/div&gt;</span><br><span class="line">			&lt;div&gt;天气好&lt;/div&gt;</span><br><span class="line">			&lt;div&gt;事业好&lt;/div&gt;</span><br><span class="line">			&lt;div&gt;身体好&lt;/div&gt;</span><br><span class="line">			&lt;div&gt;鞋子好&lt;/div&gt;</span><br><span class="line">			&lt;p&gt;长相好&lt;/p&gt;</span><br><span class="line">			&lt;p&gt;水平好&lt;/p&gt;</span><br><span class="line">			&lt;p&gt;学校好&lt;/p&gt;</span><br><span class="line">		&lt;/body&gt;</span><br><span class="line">	&lt;/html&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="14-span标签"><a href="#14-span标签" class="headerlink" title="14.span标签"></a>14.span标签</h4><p>包含信息段，控制信息段</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">	&lt;html&gt;</span><br><span class="line">		&lt;head&gt;</span><br><span class="line">			&lt;meta charsset=&quot;utf-8&quot;&gt;</span><br><span class="line">			&lt;title&gt;12345&lt;/title&gt;</span><br><span class="line">		&lt;/head&gt;</span><br><span class="line">		&lt;body&gt;</span><br><span class="line">			&lt;div&gt;心情好&lt;/div&gt;</span><br><span class="line">			&lt;div&gt;天气好&lt;/div&gt;</span><br><span class="line">			&lt;div&gt;事业好&lt;/div&gt;</span><br><span class="line">			&lt;div&gt;身体好&lt;/div&gt;</span><br><span class="line">			&lt;div&gt;鞋子好&lt;/div&gt;</span><br><span class="line">			&lt;p&gt;长相好&lt;/p&gt;</span><br><span class="line">			&lt;p&gt;水平好&lt;/p&gt;</span><br><span class="line">			&lt;p&gt;学校好&lt;/p&gt;</span><br><span class="line">			&lt;span&gt;北京师范大学&lt;/span&gt;</span><br><span class="line">			&lt;span&gt;蚌埠附属学校&lt;/span&gt;</span><br><span class="line">		&lt;/body&gt;</span><br><span class="line">	&lt;/html&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>前端笔记</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2022/03/09/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -16,19 +336,6 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2022/03/10/jintian/</url>
-    <content><![CDATA[<h2 id="今天真开心"><a href="#今天真开心" class="headerlink" title="今天真开心"></a>今天真开心</h2><p>今天开心</p>
-<p>今天新学习</p>
-]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2022/03/10/%E7%AC%AC%E4%B8%80%E7%AF%87/</url>
-    <content><![CDATA[<h2 id="第一篇"><a href="#第一篇" class="headerlink" title="第一篇"></a>第一篇</h2><p>学习学习</p>
 ]]></content>
   </entry>
 </search>
