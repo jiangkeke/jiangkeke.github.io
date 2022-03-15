@@ -24,55 +24,6 @@
       </tags>
   </entry>
   <entry>
-    <title>CSS笔记</title>
-    <url>/2022/03/14/CSS%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>选择器{width:200px;height:200px;background:black;}</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">	&lt;title&gt;军人之家&lt;/title&gt;</span><br><span class="line">	&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">		h1&#123;width: 64px;height: 114px;color：white;&#125;</span><br><span class="line">	&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;h1&gt;这是一部大片&lt;/h1&gt;</span><br><span class="line">	&lt;h2&gt;这是一部大片&lt;/h2&gt;</span><br><span class="line">	&lt;h3&gt;这是一部大片&lt;/h3&gt;</span><br><span class="line">	&lt;h4&gt;这是一部大片&lt;/h4&gt;</span><br><span class="line">	&lt;h5&gt;这是一部大片&lt;/h5&gt;</span><br><span class="line">	&lt;div&gt;12131&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-<h4 id="02-CSS引入方式"><a href="#02-CSS引入方式" class="headerlink" title="02.CSS引入方式"></a>02.CSS引入方式</h4><p>内嵌式：级别中等</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">	&lt;title&gt;军人之家&lt;/title&gt;</span><br><span class="line">	&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">		div&#123;width: 514px;height: 714px;background: black;&#125;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;h1&gt;这是一部大片&lt;/h1&gt;</span><br><span class="line">	&lt;h2&gt;这是一部大片&lt;/h2&gt;</span><br><span class="line">	&lt;h3&gt;这是一部大片&lt;/h3&gt;</span><br><span class="line">	&lt;h4&gt;这是一部大片&lt;/h4&gt;</span><br><span class="line">	&lt;h5&gt;这是一部大片&lt;/h5&gt;</span><br><span class="line">	&lt;div&gt;12131&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<p>行间式，级别最高</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div style=&quot;width:200px;&quot;&gt;12131&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>外链式：引入外面的css文件，级别最低</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;link rel=&quot;sytlesheet&quot; type=&quot;text/css&quot; href=&quot;1.css&quot;&gt;</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="03-CSS的基本选择器"><a href="#03-CSS的基本选择器" class="headerlink" title="03 CSS的基本选择器"></a>03 CSS的基本选择器</h4><p>全选符 </p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">*&#123;width:200px;height:200px;background:black;&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;test&lt;/title&gt;</span><br><span class="line">		&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	*&#123;width: 200px;height: 200px;background: red;&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&#125;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div&gt;&lt;/div&gt;</span><br><span class="line">		&lt;div&gt;&lt;/div&gt;</span><br><span class="line">		&lt;p&gt;&lt;/p&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;test&lt;/title&gt;</span><br><span class="line">		&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">			*&#123;background: red;&#125;</span><br><span class="line">div&#123;width: 200px;height: 200px;background: black;&#125;</span><br><span class="line">p&#123;width: 200px;height: 200px;background: green;&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&#125;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div&gt;&lt;/div&gt;</span><br><span class="line">		&lt;div&gt;&lt;/div&gt;</span><br><span class="line">		&lt;p&gt;&lt;/p&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<p>标签选择器</p>
-<p>类选择器     权重更高</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype hmtl&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;12345&lt;/title&gt;</span><br><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	.Nathan&#123;width: 200px;height: 500px;background: pink;&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div class=&quot;Nathan&quot;&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<p>id选择器</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype hmtl&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;12345&lt;/title&gt;</span><br><span class="line">	&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">#Nathan&#123;width: 500px;height: 500px;background: red;&#125;</span><br><span class="line">	&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div id=&quot;Nathan&quot;&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<p>级别高低：id class * </p>
-<p><img src="https://jiangkeke.oss-cn-hangzhou.aliyuncs.com/202201090642992.png"></p>
-<p><img src="https://pic-1308370142.cos.ap-nanjing.myqcloud.com/img/202201090650658.png"></p>
-<h4 id="04-盒子模型概念"><a href="#04-盒子模型概念" class="headerlink" title="04.盒子模型概念"></a>04.盒子模型概念</h4><p>盒子模型：一个元素在页面中所占的大小</p>
-]]></content>
-      <categories>
-        <category>前端笔记</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTML笔记</title>
     <url>/2022/03/14/Html%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h4 id="02-初识HTML"><a href="#02-初识HTML" class="headerlink" title="02.初识HTML"></a>02.初识HTML</h4><p>html 标签的概念<br>&lt;&gt; &lt;&#x2F;&gt;</p>
@@ -156,5 +107,54 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>CSS笔记</title>
+    <url>/2022/03/14/CSS%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>选择器{width:200px;height:200px;background:black;}</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">	&lt;title&gt;军人之家&lt;/title&gt;</span><br><span class="line">	&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">		h1&#123;width: 64px;height: 114px;color：white;&#125;</span><br><span class="line">	&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;h1&gt;这是一部大片&lt;/h1&gt;</span><br><span class="line">	&lt;h2&gt;这是一部大片&lt;/h2&gt;</span><br><span class="line">	&lt;h3&gt;这是一部大片&lt;/h3&gt;</span><br><span class="line">	&lt;h4&gt;这是一部大片&lt;/h4&gt;</span><br><span class="line">	&lt;h5&gt;这是一部大片&lt;/h5&gt;</span><br><span class="line">	&lt;div&gt;12131&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<h4 id="02-CSS引入方式"><a href="#02-CSS引入方式" class="headerlink" title="02.CSS引入方式"></a>02.CSS引入方式</h4><p>内嵌式：级别中等</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">	&lt;title&gt;军人之家&lt;/title&gt;</span><br><span class="line">	&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">		div&#123;width: 514px;height: 714px;background: black;&#125;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;h1&gt;这是一部大片&lt;/h1&gt;</span><br><span class="line">	&lt;h2&gt;这是一部大片&lt;/h2&gt;</span><br><span class="line">	&lt;h3&gt;这是一部大片&lt;/h3&gt;</span><br><span class="line">	&lt;h4&gt;这是一部大片&lt;/h4&gt;</span><br><span class="line">	&lt;h5&gt;这是一部大片&lt;/h5&gt;</span><br><span class="line">	&lt;div&gt;12131&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>行间式，级别最高</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div style=&quot;width:200px;&quot;&gt;12131&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>外链式：引入外面的css文件，级别最低</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;link rel=&quot;sytlesheet&quot; type=&quot;text/css&quot; href=&quot;1.css&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="03-CSS的基本选择器"><a href="#03-CSS的基本选择器" class="headerlink" title="03 CSS的基本选择器"></a>03 CSS的基本选择器</h4><p>全选符 </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">*&#123;width:200px;height:200px;background:black;&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;test&lt;/title&gt;</span><br><span class="line">		&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	*&#123;width: 200px;height: 200px;background: red;&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&#125;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div&gt;&lt;/div&gt;</span><br><span class="line">		&lt;div&gt;&lt;/div&gt;</span><br><span class="line">		&lt;p&gt;&lt;/p&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;test&lt;/title&gt;</span><br><span class="line">		&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">			*&#123;background: red;&#125;</span><br><span class="line">div&#123;width: 200px;height: 200px;background: black;&#125;</span><br><span class="line">p&#123;width: 200px;height: 200px;background: green;&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&#125;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div&gt;&lt;/div&gt;</span><br><span class="line">		&lt;div&gt;&lt;/div&gt;</span><br><span class="line">		&lt;p&gt;&lt;/p&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>标签选择器</p>
+<p>类选择器     权重更高</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype hmtl&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;12345&lt;/title&gt;</span><br><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	.Nathan&#123;width: 200px;height: 500px;background: pink;&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div class=&quot;Nathan&quot;&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>id选择器</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype hmtl&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;12345&lt;/title&gt;</span><br><span class="line">	&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">#Nathan&#123;width: 500px;height: 500px;background: red;&#125;</span><br><span class="line">	&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div id=&quot;Nathan&quot;&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>级别高低：id class * </p>
+<p><img src="https://jiangkeke.oss-cn-hangzhou.aliyuncs.com/202201090642992.png"></p>
+<p><img src="https://pic-1308370142.cos.ap-nanjing.myqcloud.com/img/202201090650658.png"></p>
+<h4 id="04-盒子模型概念"><a href="#04-盒子模型概念" class="headerlink" title="04.盒子模型概念"></a>04.盒子模型概念</h4><p>盒子模型：一个元素在页面中所占的大小</p>
+]]></content>
+      <categories>
+        <category>前端笔记</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
   </entry>
 </search>
