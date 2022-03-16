@@ -24,6 +24,55 @@
       </tags>
   </entry>
   <entry>
+    <title>CSS笔记</title>
+    <url>/2022/03/14/CSS%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>选择器{width:200px;height:200px;background:black;}</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">	&lt;title&gt;军人之家&lt;/title&gt;</span><br><span class="line">	&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">		h1&#123;width: 64px;height: 114px;color：white;&#125;</span><br><span class="line">	&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;h1&gt;这是一部大片&lt;/h1&gt;</span><br><span class="line">	&lt;h2&gt;这是一部大片&lt;/h2&gt;</span><br><span class="line">	&lt;h3&gt;这是一部大片&lt;/h3&gt;</span><br><span class="line">	&lt;h4&gt;这是一部大片&lt;/h4&gt;</span><br><span class="line">	&lt;h5&gt;这是一部大片&lt;/h5&gt;</span><br><span class="line">	&lt;div&gt;12131&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<h4 id="02-CSS引入方式"><a href="#02-CSS引入方式" class="headerlink" title="02.CSS引入方式"></a>02.CSS引入方式</h4><p>内嵌式：级别中等</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">	&lt;title&gt;军人之家&lt;/title&gt;</span><br><span class="line">	&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">		div&#123;width: 514px;height: 714px;background: black;&#125;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;h1&gt;这是一部大片&lt;/h1&gt;</span><br><span class="line">	&lt;h2&gt;这是一部大片&lt;/h2&gt;</span><br><span class="line">	&lt;h3&gt;这是一部大片&lt;/h3&gt;</span><br><span class="line">	&lt;h4&gt;这是一部大片&lt;/h4&gt;</span><br><span class="line">	&lt;h5&gt;这是一部大片&lt;/h5&gt;</span><br><span class="line">	&lt;div&gt;12131&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>行间式，级别最高</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div style=&quot;width:200px;&quot;&gt;12131&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>外链式：引入外面的css文件，级别最低</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;link rel=&quot;sytlesheet&quot; type=&quot;text/css&quot; href=&quot;1.css&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="03-CSS的基本选择器"><a href="#03-CSS的基本选择器" class="headerlink" title="03 CSS的基本选择器"></a>03 CSS的基本选择器</h4><p>全选符 </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">*&#123;width:200px;height:200px;background:black;&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;test&lt;/title&gt;</span><br><span class="line">		&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	*&#123;width: 200px;height: 200px;background: red;&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&#125;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div&gt;&lt;/div&gt;</span><br><span class="line">		&lt;div&gt;&lt;/div&gt;</span><br><span class="line">		&lt;p&gt;&lt;/p&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;test&lt;/title&gt;</span><br><span class="line">		&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">			*&#123;background: red;&#125;</span><br><span class="line">div&#123;width: 200px;height: 200px;background: black;&#125;</span><br><span class="line">p&#123;width: 200px;height: 200px;background: green;&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&#125;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div&gt;&lt;/div&gt;</span><br><span class="line">		&lt;div&gt;&lt;/div&gt;</span><br><span class="line">		&lt;p&gt;&lt;/p&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>标签选择器</p>
+<p>类选择器     权重更高</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype hmtl&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;12345&lt;/title&gt;</span><br><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	.Nathan&#123;width: 200px;height: 500px;background: pink;&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div class=&quot;Nathan&quot;&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>id选择器</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype hmtl&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;12345&lt;/title&gt;</span><br><span class="line">	&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">#Nathan&#123;width: 500px;height: 500px;background: red;&#125;</span><br><span class="line">	&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div id=&quot;Nathan&quot;&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>级别高低：id class * </p>
+<p><img src="https://jiangkeke.oss-cn-hangzhou.aliyuncs.com/202201090642992.png"></p>
+<p><img src="https://pic-1308370142.cos.ap-nanjing.myqcloud.com/img/202201090650658.png"></p>
+<h4 id="04-盒子模型概念"><a href="#04-盒子模型概念" class="headerlink" title="04.盒子模型概念"></a>04.盒子模型概念</h4><p>盒子模型：一个元素在页面中所占的大小</p>
+]]></content>
+      <categories>
+        <category>前端笔记</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML笔记</title>
     <url>/2022/03/14/Html%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h4 id="02-初识HTML"><a href="#02-初识HTML" class="headerlink" title="02.初识HTML"></a>02.初识HTML</h4><p>html 标签的概念<br>&lt;&gt; &lt;&#x2F;&gt;</p>
@@ -109,52 +158,66 @@
 ]]></content>
   </entry>
   <entry>
-    <title>CSS笔记</title>
-    <url>/2022/03/14/CSS%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>选择器{width:200px;height:200px;background:black;}</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">	&lt;title&gt;军人之家&lt;/title&gt;</span><br><span class="line">	&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">		h1&#123;width: 64px;height: 114px;color：white;&#125;</span><br><span class="line">	&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;h1&gt;这是一部大片&lt;/h1&gt;</span><br><span class="line">	&lt;h2&gt;这是一部大片&lt;/h2&gt;</span><br><span class="line">	&lt;h3&gt;这是一部大片&lt;/h3&gt;</span><br><span class="line">	&lt;h4&gt;这是一部大片&lt;/h4&gt;</span><br><span class="line">	&lt;h5&gt;这是一部大片&lt;/h5&gt;</span><br><span class="line">	&lt;div&gt;12131&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-<h4 id="02-CSS引入方式"><a href="#02-CSS引入方式" class="headerlink" title="02.CSS引入方式"></a>02.CSS引入方式</h4><p>内嵌式：级别中等</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">	&lt;title&gt;军人之家&lt;/title&gt;</span><br><span class="line">	&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">		div&#123;width: 514px;height: 714px;background: black;&#125;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;h1&gt;这是一部大片&lt;/h1&gt;</span><br><span class="line">	&lt;h2&gt;这是一部大片&lt;/h2&gt;</span><br><span class="line">	&lt;h3&gt;这是一部大片&lt;/h3&gt;</span><br><span class="line">	&lt;h4&gt;这是一部大片&lt;/h4&gt;</span><br><span class="line">	&lt;h5&gt;这是一部大片&lt;/h5&gt;</span><br><span class="line">	&lt;div&gt;12131&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html</span><br></pre></td></tr></table></figure>
+    <title>成长才是最大的利益</title>
+    <url>/2022/03/14/%E6%88%90%E9%95%BF%E6%89%8D%E6%98%AF%E6%9C%80%E5%A4%A7%E7%9A%84%E5%88%A9%E7%9B%8A/</url>
+    <content><![CDATA[<blockquote>
+<p>事由：我外甥乐乐（五年级）利用课后放学时间替同学跑腿买东西，赚取跑腿费，每单5毛，被妈妈发现后不服气，认为是自己劳动所得。</p>
+</blockquote>
+<hr>
+<p>我有三个观点：</p>
+<ul>
+<li>同学之间不能讲利益</li>
+<li>现阶段，重点在于自己的成长，不要贪图眼前的小利</li>
+<li>体力劳动和脑力劳动的区别<span id="more"></span>
+<h3 id="同学之间不能讲利益"><a href="#同学之间不能讲利益" class="headerlink" title="同学之间不能讲利益"></a>同学之间不能讲利益</h3></li>
+</ul>
+<p>同学情是除了亲情外最真挚珍贵的感情了，其中尤为贵重的就是相处六年的小学同学之间的感情，当20年后，同学聚会，大家回忆起当年，乐乐给大家的印象可能就是从小就会赚大家钱，唯利是图，连同学的钱也赚，以后谁会和你当朋友，谁敢拿你当朋友。</p>
+<p>古人云：</p>
+<blockquote>
+<p>“君子之交淡若水，小人之交甘若醴；君子淡以亲，小人甘以绝”——《庄子·山木》</p>
+</blockquote>
+<p>原话翻译一下就是：君子之间的友情，像清水一样淡泊；小人之间的交情，像甜酒一样美味。但是，君子淡泊，却内心亲近，小人甘甜，却利断义绝。</p>
+<blockquote>
+<p>朋党之说，自古有之……大凡君子与君子以同道为朋，小人与小人以同利为朋，此自然之理也……小人所好者禄利也，所贪者财货也。——欧阳修《朋党论》</p>
+</blockquote>
+<p>小人与小人之间只有利益，没有真心，一切用金钱衡量，值还是不值，能赚钱就做，不能赚钱就不做。</p>
+<p>现在乐乐接一单是5毛，乐意做，如果接一单是5分，1分钱，你还愿意做吗？如果不愿意，那是什么原因呢？是不是因为你在用金钱、用利益来衡量帮同学忙这件事？</p>
+<p>我觉得帮助同学是应该的，是值得赞扬的，如果你义务、免费帮助同学、老师或者妈妈、奶奶，这一定是一件非常好的事情。但是前提是出自对同学真情实意的帮助，而不是在脑子里经过反复计算是否划算的结果。帮忙也需要衡量自己的时间，在力所能及的情况下勇于付出，你会收获更多。</p>
+<p>舅舅和你说一件自己身上的小故事，舅舅刚工作时，是在南京的一所大学上班，有很多学生、同事的电脑出了问题都喜欢找我。大学旁边有电脑城，维修一次电脑，至少50元，多则上百元。但舅舅维修了无数台电脑，没有受过一分钱。我的想法很简单，大家对我都很好，我能帮助一点就是一点，收了几十元钱太伤感情了。而且为了几十元钱耗费我的时间，说实话我也是不愿意的（这句话后面解释）。我得到了什么？</p>
+<p><strong>首先</strong>，我得到了所有同事以及学生的友谊，在一次暑假，单位有一个去中央电视台学习的机会，全学院只有这么一个名额，大家都想去，但是，最后，所有人都同意把这个名额给了我。我想，如果我每修一次电脑就收点钱，我是不会得到这个机会的。</p>
+<p><strong>其次</strong>，在2013年，我感觉学校的收入过低，开始和同事在校外兼职做计算机考试培训，后来想自己开培训班。在我第一次鼓足勇气在朋友圈发帖自己宣传时，几乎所有的学生和老师都帮我转发，义务宣传，互相推荐，我的培训班瞬间就爆满了。我自己都不敢相信，我想，如果当时他们找我帮忙时，我都收费，那么，在我需要帮忙时，可能没有人会真心帮助我。</p>
+<img src="https://jiangkeke.oss-cn-hangzhou.aliyuncs.com/hexo/20220316/IMG_20150904_203342.jpg" style="zoom:25%;" />
 
 
 
+<p>但是，请注意，所有一切后来的收获，都是在我付出时不知道的，关于付出还请记住一句话：<strong>付出时不必求回报，内心无愧就够了。</strong></p>
+<h3 id="现阶段，重点在于自己的成长，不要贪图眼前的小利"><a href="#现阶段，重点在于自己的成长，不要贪图眼前的小利" class="headerlink" title="现阶段，重点在于自己的成长，不要贪图眼前的小利"></a>现阶段，重点在于自己的成长，不要贪图眼前的小利</h3><p>刚刚结束的北京冬奥会，相信乐乐也关注了，最耀眼的明星肯定非<strong>谷爱凌</strong>莫属。我想，对于18岁的谷爱凌，仅仅比乐乐大了几岁，能取得这么大的成就，肯定有她不一样的地方。</p>
+<iframe src="//player.bilibili.com/player.html?aid=678925376&bvid=BV1km4y1Z76c&cid=505141927&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
-
-<p>行间式，级别最高</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div style=&quot;width:200px;&quot;&gt;12131&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>外链式：引入外面的css文件，级别最低</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;link rel=&quot;sytlesheet&quot; type=&quot;text/css&quot; href=&quot;1.css&quot;&gt;</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="03-CSS的基本选择器"><a href="#03-CSS的基本选择器" class="headerlink" title="03 CSS的基本选择器"></a>03 CSS的基本选择器</h4><p>全选符 </p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">*&#123;width:200px;height:200px;background:black;&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;test&lt;/title&gt;</span><br><span class="line">		&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	*&#123;width: 200px;height: 200px;background: red;&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&#125;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div&gt;&lt;/div&gt;</span><br><span class="line">		&lt;div&gt;&lt;/div&gt;</span><br><span class="line">		&lt;p&gt;&lt;/p&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;test&lt;/title&gt;</span><br><span class="line">		&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">			*&#123;background: red;&#125;</span><br><span class="line">div&#123;width: 200px;height: 200px;background: black;&#125;</span><br><span class="line">p&#123;width: 200px;height: 200px;background: green;&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&#125;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div&gt;&lt;/div&gt;</span><br><span class="line">		&lt;div&gt;&lt;/div&gt;</span><br><span class="line">		&lt;p&gt;&lt;/p&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<p>标签选择器</p>
-<p>类选择器     权重更高</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype hmtl&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;12345&lt;/title&gt;</span><br><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	.Nathan&#123;width: 200px;height: 500px;background: pink;&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div class=&quot;Nathan&quot;&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<p>id选择器</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!doctype hmtl&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;12345&lt;/title&gt;</span><br><span class="line">	&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">#Nathan&#123;width: 500px;height: 500px;background: red;&#125;</span><br><span class="line">	&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div id=&quot;Nathan&quot;&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<p>级别高低：id class * </p>
-<p><img src="https://jiangkeke.oss-cn-hangzhou.aliyuncs.com/202201090642992.png"></p>
-<p><img src="https://pic-1308370142.cos.ap-nanjing.myqcloud.com/img/202201090650658.png"></p>
-<h4 id="04-盒子模型概念"><a href="#04-盒子模型概念" class="headerlink" title="04.盒子模型概念"></a>04.盒子模型概念</h4><p>盒子模型：一个元素在页面中所占的大小</p>
+<p>所有的成就背后都有付出，更离不开的是“专注”。将所有的注意力聚焦在学习和自己的天赋上，必然会成功。我相信谷爱凌在成长的过程中，遇见的诱惑肯定很多，她有代言，甚至有导演邀请她拍电影，但是她都拒绝了，我想，她面对一些诱惑时，肯定也心动过，犹豫过，但是想想自己的学习，热爱的滑板，只能放弃那些。对于十几岁的少年来说，没有什么比你现在更珍贵的时光了，我想，如果能在你现在的年龄再过一年，有无数的人愿意出百万千万去换取。你为了5毛钱就放弃自己的学习时间和成长的时间，是不是有点过于廉价了。对于现在的你，未来无价，梦想无价！</p>
+<p>顺便说一句谷爱凌的赚钱能力：</p>
+<blockquote>
+<p>那么谷爱凌的商业代言费是多少呢？根据《21世纪商业评论》的报道：“2021年之前，谷爱凌的代言费大概为100万美元。2021年2月后，她接连拿下世界极限运动会和世锦赛的两枚金牌，代言费用开始一路上涨。<strong>目前谷爱凌一个新代言的费用，税后约为250万美元，相当于人民币1590万元。如果按照一个代言平均150万美元估算，谷爱凌的27个代言，将带来约4000万美元收入，超过人民币2.5亿元</strong>。”</p>
+</blockquote>
+<p>可以简单地算一下，跑一单赚5毛钱，需要跑到啥时候才能赚到谷爱凌一天能赚到的钱？</p>
+<p>让自己成长，自我增值，才是现在最值钱的事情！</p>
+<p>英语应付高考，总共大概需要3500个单词。背完这3500个单词，再熟背200篇英文文章（课文）。高考考到135分应该没什么问题。这个价值多少钱呢？根据一些机构的推测，高考在一本线上，每高出10分，在今后的职场中平均每年多赚5万元。换成工作40年计算，就是200万元。可以简单认为3500个单词+200篇文章&#x3D;200万。   你能算出每个单词价值多少钱吗？我想每个单词的价值肯定是超过50元的，也就是背一个单词的价值，等于乐乐帮同学跑500单才能赚到的钱。真的值得吗？</p>
+<h3 id="体力劳动和脑力劳动的区别"><a href="#体力劳动和脑力劳动的区别" class="headerlink" title="体力劳动和脑力劳动的区别"></a>体力劳动和脑力劳动的区别</h3><p>为什么所有大人都说要好好学习，因为进了社会才会真正明白学习导致的人生差距有多大。简单的说，不爱学习的人，最后往往从事体力劳动居多，成绩好的同学，未来更多的是从事脑力劳动。</p>
+<blockquote>
+<ul>
+<li>体力劳动：送外卖、搬运工、看门人、农民、工厂流水线工人等技术含量低的劳动</li>
+<li>脑力劳动：与“体力劳动”相对。以脑力消耗为主的劳动。其特征在于劳动者在生产中运用的是智力、科学文化知识和生产技能，故亦称“智力劳动”。是质量较高的复杂劳动。</li>
+</ul>
+</blockquote>
+<p>现在最典型的体力劳动应该就是外卖小哥了，挣每单的跑腿费，其实，乐乐目前也算是“外卖小哥”了。</p>
+<p>前段时间网上有篇很火的文章：<a href="https://baijiahao.baidu.com/s?id=1677231323622016633&wfr=spider&for=pc">《外卖骑手，困在系统里》</a>，简单的说，外卖小哥是体力劳动，而背后设计算法、接单系统的人是脑力劳动者。两者的区别看完，你应该也明白了，每个人每天能送的单是有限的，精力是有限的，所以没有技术含量的体力工作能赚的钱其实很少，而且工作环境很差。</p>
 ]]></content>
       <categories>
-        <category>前端笔记</category>
+        <category>随笔</category>
       </categories>
       <tags>
-        <tag>CSS</tag>
+        <tag>乐乐</tag>
+        <tag>感想</tag>
       </tags>
   </entry>
 </search>
